@@ -12,7 +12,7 @@ const router = express.Router();
 const primeira = require('./src/routes/primeira');
 
 //index.js
-//comentario
+//comentario sem node
 
 //app.use('/', router);
 app.use('/teste', primeira);
