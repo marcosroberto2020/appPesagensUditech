@@ -20,7 +20,7 @@ exports.get = (req, res, next) => {
         conn.query(strSql,
             (error, resultado, field) => {
                 if (error) { return res.status(500).send({ error: error }) }
-                return res.status(200).send({response: resultado})
+                return res.status(200).send(resultado)
             } );
     });
 }

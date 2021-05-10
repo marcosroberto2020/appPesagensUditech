@@ -1,6 +1,9 @@
 
 var express = require('express');
+var cors = require('cors');
 var app = express();
+
+app.use(cors());
 
 
 app.use(express.static(__dirname));
@@ -15,6 +18,7 @@ const primeira = require('./src/routes/primeira');
 //comentario sem node
 
 //app.use('/', router);
+
 app.use('/teste', primeira);
 
 
